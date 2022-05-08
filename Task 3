@@ -38,6 +38,4 @@ prime= arr.filter(number => {
 
 
 Return all the palindromes in an array
-Return median of two sorted arrays of the same size
-Remove duplicates from an array
-Rotate an array by k times
+
