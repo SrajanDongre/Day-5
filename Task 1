@@ -1,0 +1,102 @@
+Do the below programs in anonymous function & IIFE
+
+(i)  Print odd numbers in an array
+Ans:-
+var arr =[1,5,8,3,9,6,4];
+(function(x) =>{
+odd= arr.filter(number => {
+    return number % 2 !==0;
+})})();
+console.log(odd);
+
+
+(ii)  Convert all the strings to title caps in a string array
+Ans:-
+function toTitleCase(str){
+  str= str.toLowerCase().split(' ');
+  for(var i=0 ; i<str.length; i++){
+    str[i]= str[i].charAt(0).toUpperCase() + str[i].slice(1);
+  }
+  return str.join(' ');
+}
+console.log(toTitleCase("hi there i am working with guvi"));
+
+
+(iii)  Sum of all numbers in an array
+Ans:-
+var arr=[1,2,3,4,5];
+(for(let i=0 ; i<arr.length ; i++){
+    sum+= arr[i];
+})();
+console.log(sum);
+
+
+(iv)  Return all the prime numbers in an array
+Ans:-
+function aprime(num){
+  var prime=[];
+  for(var k=0 ; k<= num ; k++){
+    var primenum = false ;
+    for(var l=2; l<=k ; l++){
+      if (k%l==0 && l!=k){
+        primenum = true;
+      }
+    }
+    if (primenum=== false){
+      prime.push(k);
+    }
+  }
+  return prime;
+}
+console.log(prime);
+
+
+(v) Return all the palindromes in an array
+Ans:-
+let palin=(arr) => {
+  let isPalindrome = true;
+  for (let i=0 ; i<arr.length/2 ; i++){
+    if(arr[i] !== arr[arr.length - i - 1]){
+      isPalindrome = false;
+      break;
+    }
+  }
+  return isPalindrome;
+}
+
+
+(vi) Return median of two sorted arrays of the same size
+Ans:-
+var a=[1,2,3,5,7];
+var b=[2,3,4,6,8];
+(function(a)=>{
+let c=a+b;
+med= c.length/2;
+})();
+console.log(med);
+
+
+(vii) Remove duplicates from an array
+Ans:-
+var arr=[1,2,3,4,5];
+(function(x) =>{
+let chars= arr;
+let uniqueChars = [...new Set(chars)];
+})();
+console.log(uniqueChars);
+
+
+(viii) Rotate an array by k times
+Ans:-
+const rotateArray1 = function(nums ,k){
+   for (let i=0; i<k; i++){
+       num.unshift(nums,pop());
+   }
+   return nums;
+}
+
+
+
+
+
+
